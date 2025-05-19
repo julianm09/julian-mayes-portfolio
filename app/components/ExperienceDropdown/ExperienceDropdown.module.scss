@@ -1,0 +1,61 @@
+.container {
+	width: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+  cursor: pointer;    
+
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+
+	.dropdown {
+		display: flex;
+		justify-content: flex-start;
+    border-radius: 8px;
+    border: 1px dashed #333;
+
+		.image {
+			background: #f24711;
+			min-width: 56px;
+			min-height: 56px;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.info {
+			width: 100%;
+			padding: 8px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.name {
+				font-size: 16px;
+			}
+
+			.position {
+				font-size: 14px;
+			}
+		}
+
+		.date {
+			display: flex;
+			align-items: center;
+			font-size: 12px;
+			white-space: nowrap;
+		}
+
+		.icon {
+			display: flex;
+			align-items: center;
+			padding: 8px;
+		}
+	}
+
+	.content {
+		padding: 14px;
+	}
+}

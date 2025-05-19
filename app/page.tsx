@@ -1,95 +1,77 @@
-import Image from "next/image";
+import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
+import Skills from "./components/Skills/Skills";
 import styles from "./page.module.css";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+	const experience = [
+		{
+			gradient: "#f24711, #731b00",
+			name: "Critical Mass",
+			position: "Frontend Developer",
+			date: "May 2022 - Present",
+			description:
+				"Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
+		},
+		{
+			gradient: "#3659e0,rgb(36, 59, 153)",
+			name: "Techies of Tomorrow",
+			position: "Frontend Developer Intern",
+			date: "Mar 2022 - May 2022",
+			description:
+				"Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
+		},
+		{
+			gradient: "#b40000,rgb(88, 1, 1)",
+			name: "WelTel Health",
+			position: "Web Developer",
+			date: "Aug 2021 - Apr 2022",
+			description:
+				"Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
+		},
+		{
+			gradient: "#00a8e0, #00b188",
+			name: "Emily Carr",
+			position: "Web Developer",
+			date: "May 2021 - Sep 2021",
+			description:
+				"Spearheaded the development of scalable web solutions, optimizing user experience for SaaS platforms. Led a team in crafting responsive, high-performing web interfaces using modern frameworks.",
+		},
+	];
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	const education = [
+		{
+			gradient: "#003c71,rgb(2, 92, 171)",
+			name: "BCIT",
+			position: "Digital Design & Development",
+			date: "Sept 2022 - March 2022",
+			description:
+				"Completed a hands-on program covering web development and design. Learned to build responsive websites and applications using HTML, CSS, JavaScript, and React. Worked on team projects that followed real-world workflows, focusing on usability, clean code, and practical problem-solving.",
+		},
+	];
+
+	const languages = ["JavaScript", "TypeScript", "HTML ", "CSS", "Sass"];
+
+	const technologies = [
+		"React",
+		"Node.js",
+		"Next.js",
+		"Express",
+		"Git",
+		"Jest",
+		"Redux",
+		"Vercel",
+	];
+
+	return (
+		<div className={styles.page}>
+			<div className={styles.container}>
+				<About header={"ABOUT"}/>
+				<Skills header={"LANGUAGES"} skills={languages} />
+				<Skills header={"TECHNOLOGIES"} skills={technologies} />
+				<Experience header={"EXPERIENCE"} experience={experience} />
+				<Experience header={"EDUCATION"} experience={education} />
+			</div>
+		</div>
+	);
 }
