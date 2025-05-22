@@ -33,6 +33,33 @@ export const experience = [
 	},
 ];
 
+export const projects = [
+	{
+		image: "/sonatrio.png",
+		name: "Sonatrio",
+		description:
+			"An AI-powered tool that turns audio files into written content. Upload files to generate summaries, blogs, and other formats.",
+		link: "https://galla.vercel.app/",
+		repo: "https://www.cowboyinteractive.com/",
+	},
+	{
+		image: "/galla.png",
+		name: "Galla",
+		description:
+			"An AI-powered website prototyping tool for designers and developers. Create a section on the right to get started and explore your ideas.",
+		link: "https://galla.vercel.app/",
+		repo: "https://github.com/julianm09/galla",
+	},
+	{
+		image: "/cowboy.png",
+		name: "Cowboy Interactive",
+		description:
+			"A design-first, fully managed website service for small businesses across Canada. Built for speed, clarity, and ease of use from day one.",
+		link: "https://www.cowboyinteractive.com/",
+		repo: "https://www.cowboyinteractive.com/",
+	},
+];
+
 export const education = [
 	{
 		gradient: "#003c71,rgb(2, 92, 171)",
@@ -58,6 +85,6 @@ export const technologies = [
 	"Express",
 	"Git",
 	"Jest",
-	"Redux",
-	"Vercel",
+	// "Redux",
+	// "Vercel",
 ];

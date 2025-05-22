@@ -5,6 +5,7 @@ import ProjectsCard from "../ProjectsCard/ProjectsCard";
 import Section from "../Section/Section";
 import styles from "./Projects.module.scss";
 import { useEffect, useRef, useState } from "react";
+import { projects } from "@/app/data";
 
 export default function Projects({}) {
 	const galleryRef = useRef<HTMLDivElement | null>(null);
@@ -55,9 +56,12 @@ export default function Projects({}) {
 					<ArrowLeft size={20} />
 				</div>
 				<div className={styles["gallery"]} ref={galleryRef}>
-					<ProjectsCard />
-					<ProjectsCard />
-					<ProjectsCard />
+					{projects?.map((project) => (
+						<ProjectsCard
+							key={project.name}
+							project={project}
+						/>
+					))}
 				</div>
 				<div
 					className={`${styles["arrow-right"]} ${styles["button"]} ${

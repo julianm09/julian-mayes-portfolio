@@ -6,10 +6,10 @@ interface SectionProps {
 	children?: React.ReactNode;
 }
 
-export default function Section({ header = "ABOUT", children }: SectionProps) {
+export default function Section({ header, children }: SectionProps) {
 	return (
 		<div className={styles.container}>
-			<Header header={header} />
+			{header && <Header header={header} />}
 			<div className={styles.content}>{children}</div>
 		</div>
 	);

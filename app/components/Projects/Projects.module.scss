@@ -25,10 +25,10 @@
 	cursor: pointer;
 	background: #666;
 	position: absolute;
-	top: 50%;
+	top: calc(50% - 17px);
 	cursor: pointer;
 	opacity: 0;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .button.visible {

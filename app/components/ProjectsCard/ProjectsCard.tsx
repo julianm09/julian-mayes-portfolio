@@ -1,13 +1,23 @@
 import Image from "next/image";
 import styles from "./ProjectsCard.module.scss";
-import { ArrowUpRight } from "react-feather";
+import { ArrowUpRight, GitHub } from "react-feather";
 
-export default function ProjectsCard({}) {
+interface projectsProps {
+	project: {
+		image?: string;
+		name?: string;
+		description?: string;
+		link?: string;
+		repo?: string;
+	};
+}
+
+export default function ProjectsCard({ project }: projectsProps) {
 	return (
 		<div className={styles["card"]}>
 			<div className={styles["image"]}>
 				<img
-					src="/cowboy.png"
+					src={project.image}
 					alt="cowboy"
 					width={218}
 					height={145}
@@ -15,12 +25,26 @@ export default function ProjectsCard({}) {
 				/>
 			</div>
 			<div className={styles["content"]}>
-				<div className={styles["name"]}>Cowboy Interactive</div>
+				<div className={styles["name"]}>{project.name}</div>
 				<div className={styles["description"]}>
-					A sleek and responsive landing page designed for modern
-					startups to showcase their products effectively.
+					{project.description}
 				</div>
-				<div className={styles["link"]}>Click to view <ArrowUpRight size={14}/></div>
+				<div className={styles["links"]}>
+					<a
+						className={styles["link"]}
+						href={project.link}
+						target="_blank"
+					>
+						View
+					</a>
+					<a
+						className={`${styles["link"]} ${styles["link"]}`}
+						href={project.repo}
+						target="_blank"
+					>
+						Repo <ArrowUpRight size={14} />
+					</a>
+				</div>
 			</div>
 		</div>
 	);
