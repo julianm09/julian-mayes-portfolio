@@ -40,7 +40,7 @@ export const projects = [
 		description:
 			"An AI-powered tool that turns audio files into written content. Upload files to generate summaries, blogs, and other formats.",
 		link: "https://galla.vercel.app/",
-		repo: "https://www.cowboyinteractive.com/",
+		repo: "https://github.com/julianm09/sonatrio",
 	},
 	{
 		image: "/galla.png",
@@ -56,7 +56,7 @@ export const projects = [
 		description:
 			"A design-first, fully managed website service for small businesses across Canada. Built for speed, clarity, and ease of use from day one.",
 		link: "https://www.cowboyinteractive.com/",
-		repo: "https://www.cowboyinteractive.com/",
+		repo: "https://github.com/julianm09/cowboy",
 	},
 ];
 
