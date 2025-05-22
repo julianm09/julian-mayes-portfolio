@@ -1,0 +1,36 @@
+.card {
+	width: 230px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  border: 1px solid #333;
+}
+
+.content {
+	padding: 14px;
+	width: 100%;
+	gap: 16px;
+	display: flex;
+	flex-direction: column;
+
+	.name {
+		font-size: 16px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
+
+	.link {
+		padding: 4px 8px;
+		border: 1px solid #333;
+		align-self: flex-start;
+		font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+	}
+}
