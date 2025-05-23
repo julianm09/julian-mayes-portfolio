@@ -29,22 +29,26 @@ export default function ProjectsCard({ project }: projectsProps) {
 					{project.description}
 				</div>
 				<div className={styles["links"]}>
-					<a
-						className={styles["link"]}
-						href={project.link}
-						target="_blank"
-					>
-						View
-						<ArrowUpRight size={14} />
-					</a>
-					<a
-						className={`${styles["link"]} ${styles["link"]}`}
-						href={project.repo}
-						target="_blank"
-					>
-						Repo
-						<GitHub size={14} />
-					</a>
+					{project.link && (
+						<a
+							className={styles["link"]}
+							href={project.link}
+							target="_blank"
+						>
+							View
+							<ArrowUpRight size={14} />
+						</a>
+					)}
+					{project.repo && (
+						<a
+							className={`${styles["link"]} ${styles["link"]}`}
+							href={project.repo}
+							target="_blank"
+						>
+							View
+							<ArrowUpRight size={14} />
+						</a>
+					)}
 				</div>
 			</div>
 		</div>
