@@ -14,7 +14,7 @@ export default function Contact({ header = "CONTACT" }: AboutProps) {
 	return (
 		<Section header={header}>
 			{state.succeeded ? (
-				<p>Thanks, I'll get back to you soon!</p>
+				<p>Thanks, I&apos;ll get back to you soon!</p>
 			) : (
 				<form onSubmit={handleSubmit} className={styles["form"]}>
 					<div className={styles["input-container"]}>

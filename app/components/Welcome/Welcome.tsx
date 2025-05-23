@@ -21,7 +21,7 @@ export default function Welcome({}) {
 			/>
 
 			<div className={styles["column"]}>
-				<h1>Hello, I'm Julian Mayes</h1>
+				<h1>Hello, I&apos;m Julian Mayes</h1>
 				<p>Frontend Developer</p>
 
 				<div className={styles["links"]}>
