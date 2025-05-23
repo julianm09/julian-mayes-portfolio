@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./ProjectsCard.module.scss";
 import { ArrowUpRight, GitHub } from "react-feather";
 
@@ -36,13 +35,15 @@ export default function ProjectsCard({ project }: projectsProps) {
 						target="_blank"
 					>
 						View
+						<ArrowUpRight size={14} />
 					</a>
 					<a
 						className={`${styles["link"]} ${styles["link"]}`}
 						href={project.repo}
 						target="_blank"
 					>
-						Repo <ArrowUpRight size={14} />
+						Repo
+						<GitHub size={14} />
 					</a>
 				</div>
 			</div>

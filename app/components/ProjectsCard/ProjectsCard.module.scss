@@ -46,6 +46,19 @@
 		justify-content: center;
 		align-items: center;
 		height: 28px;
+
+		transition: 0.2s ease;
+
+		&:hover {
+			border: 1px solid #f4f4f4;
+			background-color: #333;
+		}
+
+		svg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	.repo {

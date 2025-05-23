@@ -1,15 +1,19 @@
 .page {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .container {
-  width: 500px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 104px 0 56 0;
-  gap: 56px;
+	width: 500px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 104px 0 56 0;
+	gap: 56px;
+
+	@media screen and (max-width: 600px) {
+    width:280px;
+	}
 }

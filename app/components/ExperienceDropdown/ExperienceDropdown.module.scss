@@ -2,7 +2,7 @@
 	width: 100%;
 	border-radius: 8px;
 	overflow: hidden;
-  cursor: pointer;    
+	cursor: pointer;
 
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
@@ -14,8 +14,8 @@
 	.dropdown {
 		display: flex;
 		justify-content: flex-start;
-    border-radius: 8px;
-    border: 1px dashed #333;
+		border-radius: 8px;
+		border: 1px dashed #333;
 
 		.image {
 			background: #f24711;
@@ -46,6 +46,10 @@
 			align-items: center;
 			font-size: 12px;
 			white-space: nowrap;
+
+			@media screen and (max-width: 600px) {
+				display: none;
+			}
 		}
 
 		.icon {

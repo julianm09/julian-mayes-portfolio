@@ -1,5 +1,4 @@
 import ExperienceDropdown from "../ExperienceDropdown/ExperienceDropdown";
-import Header from "../Header/Header";
 import Section from "../Section/Section";
 import styles from "./Experience.module.scss";
 

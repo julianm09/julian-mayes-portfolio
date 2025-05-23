@@ -37,11 +37,11 @@ export default function Projects({}) {
 	}, []);
 
 	const scrollLeftHandler = () => {
-		galleryRef.current?.scrollBy({ left: -300, behavior: "smooth" });
+		galleryRef.current?.scrollBy({ left: -600, behavior: "smooth" });
 	};
 
 	const scrollRightHandler = () => {
-		galleryRef.current?.scrollBy({ left: 300, behavior: "smooth" });
+		galleryRef.current?.scrollBy({ left: 600, behavior: "smooth" });
 	};
 
 	return (

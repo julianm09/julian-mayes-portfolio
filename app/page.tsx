@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Welcome from "./components/Welcome/Welcome";
-import { education, experience, technologies } from "./data";
+import { experience, technologies } from "./data";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -17,8 +17,7 @@ export default function Home() {
 				<Skills header={"TECHNOLOGIES"} skills={technologies} />
 				<Experience header={"EXPERIENCE"} experience={experience} />
 				<Projects />
-				<Experience header={"EDUCATION"} experience={education} />
-				<Contact header={"CONTACT"}/>
+				<Contact header={"CONTACT"} />
 				<Footer />
 			</div>
 		</div>

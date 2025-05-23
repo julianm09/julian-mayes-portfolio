@@ -8,8 +8,8 @@ export default function Footer({}) {
 				Based on a design by{" "}
 				<a target="_blank" href="https://x.com/prathamBuilds">
 					Pratham
-				</a>.
-				Built in Next.js
+				</a>
+				. Built&nbsp;in&nbsp;Next.js
 			</div>
 		</div>
 	);

@@ -1,5 +1,4 @@
 import Section from "../Section/Section";
-import styles from "./About.module.scss";
 
 interface AboutProps {
 	header: string;

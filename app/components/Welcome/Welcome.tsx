@@ -1,7 +1,6 @@
 "use client";
 
 import { GitHub, Linkedin, Mail } from "react-feather";
-import Section from "../Section/Section";
 import styles from "./Welcome.module.scss";
 
 export default function Welcome({}) {

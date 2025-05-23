@@ -41,7 +41,7 @@
 .button {
 	border-radius: 8px;
 	height: 50px;
-	background: #111;
+	background: #151515;
 	border: 1px solid #444;
 	outline: none;
 	color: #f2f2f2;
@@ -50,4 +50,10 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+	transition: 0.2s ease;
+
+	&:hover {
+		border: 1px solid #f4f4f4;
+		background-color: #333;
+	}
 }
