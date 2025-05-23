@@ -53,6 +53,7 @@ export const projects = [
 		name: "Cowboy Interactive",
 		description:
 			"A design-first, fully managed website service for small businesses across Canada. Built for speed, clarity, and ease of use from day one.",
+		link: "https://www.cowboyinteractive.com/",
 		repo: "https://github.com/julianm09/cowboy",
 	},
 ];
