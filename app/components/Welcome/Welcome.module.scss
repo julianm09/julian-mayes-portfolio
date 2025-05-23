@@ -11,6 +11,17 @@
 		line-height: 1.2em;
 		font-weight: 700;
 	}
+
+	img {
+		border-radius: 8px;
+		height: 162px;
+		width: 162px;
+
+		@media screen and (max-width: 600px) {
+			height: 108px;
+			width: 108px;
+		}
+	}
 }
 
 .column {

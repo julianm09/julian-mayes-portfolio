@@ -37,11 +37,23 @@ export default function Projects({}) {
 	}, []);
 
 	const scrollLeftHandler = () => {
-		galleryRef.current?.scrollBy({ left: -600, behavior: "smooth" });
+		const el = galleryRef.current;
+		if (!el) return;
+
+		const newScrollLeft = Math.max(el.scrollLeft - el.clientWidth, 0);
+		el.scrollTo({ left: newScrollLeft, behavior: "smooth" });
 	};
 
 	const scrollRightHandler = () => {
-		galleryRef.current?.scrollBy({ left: 600, behavior: "smooth" });
+		const el = galleryRef.current;
+		if (!el) return;
+
+		const maxScrollLeft = el.scrollWidth - el.clientWidth;
+		const newScrollLeft = Math.min(
+			el.scrollLeft + el.clientWidth,
+			maxScrollLeft
+		);
+		el.scrollTo({ left: newScrollLeft, behavior: "smooth" });
 	};
 
 	return (
@@ -57,10 +69,7 @@ export default function Projects({}) {
 				</div>
 				<div className={styles["gallery"]} ref={galleryRef}>
 					{projects?.map((project) => (
-						<ProjectsCard
-							key={project.name}
-							project={project}
-						/>
+						<ProjectsCard key={project.name} project={project} />
 					))}
 				</div>
 				<div

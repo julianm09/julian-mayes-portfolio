@@ -14,11 +14,7 @@ export default function Welcome({}) {
 
 	return (
 		<div className={styles["container"]}>
-			<img
-				src="/profile.png"
-				alt="cowboy"
-				style={{ borderRadius: "8px", width: "162px", height: "162px" }}
-			/>
+			<img src="/profile.png" alt="cowboy" className={styles["image"]}/>
 
 			<div className={styles["column"]}>
 				<h1>Hello, I&apos;m Julian Mayes</h1>
