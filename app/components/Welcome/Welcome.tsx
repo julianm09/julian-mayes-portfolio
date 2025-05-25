@@ -44,7 +44,7 @@ export default function Welcome({}) {
 					</a>
 					{copied ? (
 						<div className={styles["message"]}>
-							Email copied!
+							Copied!
 						</div>
 					) : (
 						<button
