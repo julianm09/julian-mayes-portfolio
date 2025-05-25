@@ -2,19 +2,25 @@
 
 import { GitHub, Linkedin, Mail } from "react-feather";
 import styles from "./Welcome.module.scss";
+import { useState } from "react";
 
 export default function Welcome({}) {
+	const [copied, setCopied] = useState(false);
 	const iconSize = 18;
 
 	function copyEmailToClipboard(e: React.MouseEvent) {
 		e.preventDefault();
 		navigator.clipboard.writeText("julianmayes@gmail.com");
-		alert("Email copied to clipboard!");
+		// alert("Email copied to clipboard!");
+		setCopied(true);
+		setTimeout(() => {
+			setCopied(false);
+		}, 2000);
 	}
 
 	return (
 		<div className={styles["container"]}>
-			<img src="/profile.png" alt="cowboy" className={styles["image"]}/>
+			<img src="/profile.png" alt="cowboy" className={styles["image"]} />
 
 			<div className={styles["column"]}>
 				<h1>Hello, I&apos;m Julian Mayes</h1>
@@ -36,13 +42,18 @@ export default function Welcome({}) {
 					>
 						<Linkedin size={iconSize} />
 					</a>
-
-					<div
-						className={styles["link"]}
-						onClick={copyEmailToClipboard}
-					>
-						<Mail size={iconSize} />
-					</div>
+					{copied ? (
+						<div className={styles["message"]}>
+							Email copied!
+						</div>
+					) : (
+						<button
+							className={styles["link"]}
+							onClick={copyEmailToClipboard}
+						>
+							<Mail size={iconSize} />
+						</button>
+					)}
 				</div>
 			</div>
 		</div>

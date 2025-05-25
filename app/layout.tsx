@@ -24,7 +24,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: "Julian Mayes | Frontend Developer",
-	description: "Frontend developer based in Vancouver, BC. I build accessible, performant websites with a focus on clean design and user-friendly experiences.",
+	description:
+		"Frontend developer based in Vancouver, BC. I build accessible, performant websites with a focus on clean design and user-friendly experiences.",
 };
 
 export default function RootLayout({

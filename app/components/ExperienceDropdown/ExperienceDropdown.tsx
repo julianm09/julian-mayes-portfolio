@@ -17,7 +17,7 @@ export default function ExperienceDropdown({ experience }: ExperienceProps) {
 	const [open, setOpen] = useState(false);
 	return (
 		<div className={styles["container"]} onClick={() => setOpen(!open)}>
-			<div className={styles["dropdown"]}>
+			<button className={styles["dropdown"]}>
 				<div
 					className={styles["image"]}
 					style={{
@@ -34,7 +34,7 @@ export default function ExperienceDropdown({ experience }: ExperienceProps) {
 				<div className={styles["icon"]}>
 					{open ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
 				</div>
-			</div>
+			</button>
 
 			{open && (
 				<div className={styles["content"]}>

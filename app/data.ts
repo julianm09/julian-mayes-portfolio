@@ -29,7 +29,7 @@ export const experience = [
 		position: "Web Developer",
 		date: "May 2021 - Sep 2021",
 		description:
-			"Contributed to the development of a career resource platform using React. Focused on building responsive layouts, improving accessibility, and creating reusable UI components in collaboration with the design team.",
+			"Built a career resource platform using React as the sole developer. Focused on responsive layouts, accessibility improvements, and reusable UI components, working closely with the design team to bring the vision to life.",
 	},
 ];
 

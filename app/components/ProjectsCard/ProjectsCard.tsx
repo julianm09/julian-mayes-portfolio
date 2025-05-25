@@ -35,7 +35,7 @@ export default function ProjectsCard({ project }: projectsProps) {
 							href={project.link}
 							target="_blank"
 						>
-							View
+							Demo
 							<ArrowUpRight size={14} />
 						</a>
 					)}
@@ -45,7 +45,7 @@ export default function ProjectsCard({ project }: projectsProps) {
 							href={project.repo}
 							target="_blank"
 						>
-							Repo
+							Code
 							<GitHub size={14} />
 						</a>
 					)}

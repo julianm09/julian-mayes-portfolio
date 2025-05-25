@@ -16,6 +16,10 @@
 		justify-content: flex-start;
 		border-radius: 8px;
 		border: 1px dashed #333;
+		background: inherit;
+		color: inherit;
+		width: 100%;
+		cursor: pointer;
 
 		.image {
 			background: #f24711;
@@ -31,6 +35,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			align-items: flex-start;
 
 			.name {
 				font-size: 16px;

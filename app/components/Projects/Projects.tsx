@@ -60,12 +60,18 @@ export default function Projects({}) {
 		<Section header="PROJECTS">
 			<div className={styles["gallery-wrapper"]}>
 				<div
-					className={`${styles["arrow-left"]} ${styles["button"]} ${
-						showLeft ? styles["visible"] : ""
-					}`}
-					onClick={scrollLeftHandler}
+					className={`${styles["arrow-container-left"]} ${
+						styles["arrow-container"]
+					} ${showLeft ? styles["visible"] : ""}`}
 				>
-					<ArrowLeft size={20} />
+					<div
+						className={`${styles["arrow-left"]} ${
+							styles["arrow"]
+						} ${showLeft ? styles["visible"] : ""}`}
+						onClick={scrollLeftHandler}
+					>
+						<ArrowLeft size={20} />
+					</div>
 				</div>
 				<div className={styles["gallery"]} ref={galleryRef}>
 					{projects?.map((project) => (
@@ -73,12 +79,18 @@ export default function Projects({}) {
 					))}
 				</div>
 				<div
-					className={`${styles["arrow-right"]} ${styles["button"]} ${
-						showRight ? styles["visible"] : ""
-					}`}
-					onClick={scrollRightHandler}
+					className={`${styles["arrow-container-right"]} ${
+						styles["arrow-container"]
+					} ${showRight ? styles["visible"] : ""}`}
 				>
-					<ArrowRight size={20} />
+					<div
+						className={`${styles["arrow-right"]} ${
+							styles["arrow"]
+						} ${showRight ? styles["visible"] : ""}`}
+						onClick={scrollRightHandler}
+					>
+						<ArrowRight size={20} />
+					</div>
 				</div>
 			</div>
 		</Section>

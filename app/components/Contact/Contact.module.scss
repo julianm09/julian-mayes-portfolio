@@ -65,7 +65,8 @@
 	transition: 0.2s ease;
 	font-size: 14px;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		border: 1px solid #f4f4f4;
 		background-color: #333;
 	}
